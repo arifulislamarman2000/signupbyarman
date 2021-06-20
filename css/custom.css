@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{}
+img{max-width: 100%;}
+.container{
+    width: calc(100% - 100px);
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-2-1{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+}
+.align-center{
+    align-items: center;
+    /* margin: 36px 40px 10px 10px; */
+}
+.align{
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background-color: #ffffff;
+    box-shadow: 1px 0px 5px black;
+    margin-bottom: 47px;
+}
+header .logo{
+    width: 20%;
+}
+header .logo a img{
+    width: 100px;
+}
+nav{
+    width: 80%;
+}
+nav ul{
+    display: flex;
+    /* text-decoration: none; */
+    justify-content: flex-end;
+}
+
+nav ul li{
+    /* text-decoration: none; */
+    list-style: none;
+    padding: 9px 6px 9px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000bf;
+    padding: 12px;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    /* color: #44c9e4; */
+    background-color: #e0e0e0;
+    transition-duration: 0.3s;
+}
+
+section{  }
+/**************signup form*******************/
+
+.hi8{height: 80vh;}
+.signup-form-selection{
+}
+.signup{
+             width: 50%;
+             margin: auto;
+             margin-top: 20px;
+             flex: 0 0 auto;
+             border-radius: 19px;
+             background: #ffffff;
+             box-shadow: 0px 0px 14px #000000, 0px 0px 14px #ffffff;
+             }
+.signup:hover{
+             box-shadow: 0px 0px 14px #ffffff, 0px 0px 14px #000000;
+}             
+form{padding: 30px;/* line-height: 25px; */}
+form h3{
+    text-align: center;
+    padding: 20px;
+}
+form strong{
+    display: block;
+    margin: 8px 0px 0px;
+}
+form label{
+    display: inline-block;
+}
+form input,form textarea{
+    width: 100%;
+    padding: 1px 11px;
+    border: 1px solid black;
+    color: #000000;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    width: auto;
+    margin-left: 5px;
+}
+
+
+form input[type="submit"]{
+    display: block;
+    padding: 10px 15px;
+    width: auto;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 800;
+    background-color: #000000;
+    color: white;
+    border-radius: 19px;
+}
+form input[type="submit"]:hover{
+    opacity: 0.3s;
+    /* color: #0a0a0a; */
+    box-shadow: 0px 0px 7px 2px #cabebe;
+}
+form p{
+    display: flex;
+    font-size: 17px;
+    font-weight: 400;
+    align-items: center;
+}
+form p a {
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+    width: auto;
+    background-color: black;
+    padding: 8px;
+    font-size: 13px;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 2px white;
+}
+form p a:hover{}
+
+/*********index portfolio************/
+section h2{
+    text-align: center;
+    font-size: 40px;
+}
+.col{
+    width: 40%;
+    background: black;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+}
+.col a{
+    display: block;
+    text-decoration: none;
+}
+.col a img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+.col a h4{
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.heightwidth{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/************about*************/
+section{
+    align-items: center;
+    /* justify-content: center; */
+}
+.box{
+    /* justify-content: center; */
+    align-items: center;
+    /* margin: auto; */
+    /* height: 100vh; */
+    margin-top: 110px;
+}
+section .box h3{
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+section .box p{
+    font-size: 32px;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+/******************footer************/
+footer{
+    /* width: 100%; */
+    background: #cccccc;
+    margin-top: 53px;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+    list-style: none;
+}
+footer ul li{
+    padding: 10px 10px;
+}
+footer ul li a {
+    text-decoration: none;
+    color: black;
+}
+footer .privacy{
+    width: 50%;
+    /* display: flex; */
+}
+footer .social-link{
+    width: 70%;
+    justify-content: flex-end;
+    margin-left: 145px;
+}
